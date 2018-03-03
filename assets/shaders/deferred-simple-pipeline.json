@@ -1,0 +1,31 @@
+{
+  "vertex": "shaders/deferred-simple-pipeline.vert",
+  "fragment": "shaders/deferred-simple-pipeline.frag",
+  "layout": {
+    "aPosition": {
+      "size": 2,
+      "stride": 4,
+      "offset": 0
+    },
+    "aTexCoord": {
+      "size": 2,
+      "stride": 4,
+      "offset": 2
+    }
+  },
+  "samplers": {
+    "sGBufferAlbedo": {
+      "channel": 0,
+      "texture": "#simple-deferred-g-buffer",
+      "filtering": "linear"
+    },
+    "sLBufferLightEmission": {
+      "channel": 1,
+      "texture": "#simple-deferred-l-buffer",
+      "filtering": "linear"
+    }
+  },
+  "uniforms": {
+    "uAmbientLight": [1, 1, 1, 0]
+  }
+}

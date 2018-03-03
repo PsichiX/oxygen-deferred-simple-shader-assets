@@ -1,0 +1,9 @@
+{
+  "assets": [
+    "shader://shaders/deferred-simple-pipeline.json",
+    "shader://shaders/deferred-simple-pipeline-preview.json",
+    "shader://shaders/deferred-simple-sprite.json",
+    "shader://shaders/deferred-simple-directional-light.json",
+    "shader://shaders/deferred-simple-point-light.json"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "vertex": "shaders/deferred-simple-directional-light.vert",
+  "fragment": "shaders/deferred-simple-directional-light.frag",
+  "includes": [
+    "shaders/deferred-simple.frag"
+  ],
+  "layout": {
+    "aPosition": {
+      "size": 2,
+      "stride": 2,
+      "offset": 0
+    }
+  },
+  "uniforms": {
+    "uColor": [1, 1, 1, 1]
+  },
+  "blending": {
+    "source": "one",
+    "destination": "one"
+  }
+}

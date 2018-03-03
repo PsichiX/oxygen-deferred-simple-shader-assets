@@ -1,0 +1,28 @@
+{
+  "vertex": "shaders/deferred-simple-point-light.vert",
+  "fragment": "shaders/deferred-simple-point-light.frag",
+  "includes": [
+    "shaders/deferred-simple.frag"
+  ],
+  "layout": {
+    "aPosition": {
+      "size": 2,
+      "stride": 4,
+      "offset": 0
+    },
+    "aTexCoord": {
+      "size": 2,
+      "stride": 4,
+      "offset": 2
+    }
+  },
+  "uniforms": {
+    "uModelView": "model-view-matrix",
+    "uProjection": "projection-matrix",
+    "uColor": [1, 1, 1, 1]
+  },
+  "blending": {
+    "source": "one",
+    "destination": "one"
+  }
+}
