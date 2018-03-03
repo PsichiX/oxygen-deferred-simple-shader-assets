@@ -16,3 +16,12 @@ new PackWebpackPlugin([
   ] }
 ])
 ```
+
+**src/index.js**:
+```javascript
+// Import helper component.
+import { DeferredSimpleRenderer } from 'oxygen-deferred-simple-shader-assets';
+
+// Register helper component.
+EntitySystem.registerComponent('DeferredSimpleRenderer', DeferredSimpleRenderer.factory);
+```
