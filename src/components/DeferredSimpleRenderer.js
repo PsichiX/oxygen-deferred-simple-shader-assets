@@ -23,8 +23,8 @@ export default class DeferredSimpleRenderer extends DeferredRenderer {
 
     this.gBufferId = '#simple-deferred-g-buffer';
     this.lBufferId = '#simple-deferred-l-buffer';
-    this.gBufferTargets = { float: false, mipmap: false, count: 0 };
-    this.lBufferTargets = { float: false, mipmap: false, count: 0 };
+    this.gBufferTargets = 0;
+    this.lBufferTargets = 0;
   }
 
 }
